@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Three Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Player<span style="color: red;"> 1</span> is <span style="color: red;">Red </span>/&nbsp;</h1>
+    <h1>Player <span style="color: blue;">2</span> is <span style="color: blue;">Blue</span>.</h1>
+
+    <div id="Board">
+        <div class="Cell" id="0" onclick="puttSymbol(0)"  style="background-color: rgb(214, 233, 227);"></div>
+        <div class="Cell" id="1" onclick="puttSymbol(1)" style="background-color: rgb(214, 233, 227);"></div>
+        <div class="Cell" id="2" onclick="puttSymbol(2)" style="background-color: rgb(214, 233, 227);"></div>
+        <div class="Cell" id="3"></div>
+        <div class="Cell" id="4"></div>
+        <div class="Cell" id="5"></div>
+        <div class="Cell" id="6"></div>
+        <div class="Cell" id="7"></div>
+        <div class="Cell" id="8"></div>
+        <div class="Cell" id="9"></div>
+        <div class="Cell" id="10"></div>
+        <div class="Cell" id="11"></div>
+        <div class="Cell" id="12"></div>
+        <div class="Cell" id="13"></div>
+        <div class="Cell" id="14"></div>
+        <div class="Cell" id="15"></div>
+        <div class="Cell" id="16"></div>
+        <div class="Cell" id="17"></div>
+    </div>
+
+    <div id="GameOver">
+        <p class="textGameOver" id="txtGameOver"></p>
+        <button id="restart" class="myButton" type="button" name="button">Try Again..?</button>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

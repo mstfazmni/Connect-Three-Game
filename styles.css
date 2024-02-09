@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --BoardWidth: 60vh;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(190, 185, 179);
+}
+
+#Board{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3px;
+    background-color: white;
+    width: 218px;
+    height: 437px;
+    position: absolute;
+    background-color: rgb(69, 116, 116);
+    border-radius: 5px;
+    padding: 30px;
+    left: 0;
+    right: 0;
+    margin:123px auto 0;
+
+}
+
+.Cell{
+    border: 3px solid rgb(61, 79, 98);
+    border-radius: 50px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+;}
+
+
+#GameOver{
+    background-color: white;
+    width: calc(var(--BoardWidth)/1.5);
+    height: var(--BoardWidth);
+    position: absolute;
+    left: calc((100vw - var(--BoardWidth))/1.75);
+    top: calc((100vh - var(--BoardWidth))/1.1);
+    display: none;
+    background-color: rgb(190, 185, 179);
+
+}
+
+
+.myButton{
+
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(95, 179, 179);
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+h1{
+    float: left;
+}
+.newDiv_red{
+     position: absolute;
+width: 67px;
+height: 67px;
+border: 3px solid rgb(61, 79, 98);
+border-radius: 50px;
+background-color: red;
+}
+
+.newDiv_blue{
+    position: absolute;
+width: 67px;
+height: 67px;
+border: 3px solid rgb(61, 79, 98);
+border-radius: 50px;
+background-color: blue;
+}
+
